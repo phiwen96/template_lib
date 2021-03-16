@@ -1,4 +1,4 @@
-#include <phime/phime.hpp>
+#include <&{root}/&{root}.hpp>
 
 
 #define CATCH_CONFIG_MAIN

@@ -1,10 +1,10 @@
-add_executable (phime_test test.cpp)
+add_executable (&{root}_test test.cpp)
 
 ph_fetch (catch2)
 
-target_link_libraries (phime_test PRIVATE phime Catch2::Catch2)
+target_link_libraries (&{root}_test PRIVATE &{root} Catch2::Catch2)
 
-ph_precompile (TARGET phime_test 
+ph_precompile (TARGET &{root}_test 
   PUBLIC 
   PCH 
     ${std_pch} 
@@ -12,7 +12,7 @@ ph_precompile (TARGET phime_test
 
 add_test (
     NAME test_shared
-    COMMAND $<TARGET_FILE:phime>
+    COMMAND $<TARGET_FILE:&{root}>
 )
 
 
