@@ -1,0 +1,8 @@
+@PACKAGE_INIT@
+
+include("${CMAKE_CURRENT_LIST_DIR}/phimeTargets.cmake")
+check_required_components(
+  "phime-shared"
+  #"message-static"
+  #"phime-app"
+)
